@@ -73,6 +73,6 @@ npx serve .
 ## Contact
 
 - Email: abhishek638983k@gmail.com
-- LinkedIn: [abhishek-tyagii](https://www.linkedin.com/in/abhishek-tyagii)
+- LinkedIn: [abhishek-tyagii](https://www.linkedin.com/in/abhishek-tyagiii/)
 - GitHub: [abhishek638983k-oss](https://github.com/abhishek638983k-oss)
 - LeetCode: [abhishek638983k-oss](https://leetcode.com/u/abhishek638983k-oss/)
