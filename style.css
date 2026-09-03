@@ -803,7 +803,9 @@ ul {
     display: block;
     transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.trafficrush {
+    object-position: center;
+}
 .project-card:hover .project-screenshot {
     transform: scale(1.06);
 }
@@ -897,6 +899,7 @@ ul {
     display: flex;
     gap: 6px;
     flex-wrap: wrap;
+    flex-direction: row-reverse;
 }
 
 .tag {
@@ -1188,7 +1191,7 @@ ul {
 }
 
 .form-note {
-    margin-top: 12px;
+    margin: 12px;
     font-size: 0.82rem;
     text-align: center;
     min-height: 1.2em;
