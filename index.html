@@ -28,6 +28,9 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
             rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
@@ -49,8 +52,8 @@
                         class="theme-toggle"
                         id="themeToggle"
                         aria-label="Toggle theme">
-                        <span class="theme-icon sun">☀</span>
-                        <span class="theme-icon moon">☽</span>
+                        <i class="theme-icon sun fa-solid fa-sun" aria-hidden="true"></i>
+                        <i class="theme-icon moon fa-solid fa-moon" aria-hidden="true"></i>
                     </button>
                     <button
                         class="hamburger"
@@ -170,7 +173,7 @@
                         <h3 class="interests-title">What drives me</h3>
                         <ul class="interests-list">
                             <li class="interest-item">
-                                <span class="interest-icon">🧠</span>
+                                <i class="interest-icon fa-solid fa-brain" aria-hidden="true"></i>
                                 <div>
                                     <strong>CS Fundamentals</strong>
                                     <p>
@@ -180,7 +183,7 @@
                                 </div>
                             </li>
                             <li class="interest-item">
-                                <span class="interest-icon">⚡</span>
+                                <i class="interest-icon fa-solid fa-bolt" aria-hidden="true"></i>
                                 <div>
                                     <strong>400+ DSA on LeetCode</strong>
                                     <p>
@@ -190,7 +193,7 @@
                                 </div>
                             </li>
                             <li class="interest-item">
-                                <span class="interest-icon">🖥️</span>
+                                <i class="interest-icon fa-solid fa-desktop" aria-hidden="true"></i>
                                 <div>
                                     <strong>Computer Hardware</strong>
                                     <p>
@@ -200,7 +203,7 @@
                                 </div>
                             </li>
                             <li class="interest-item">
-                                <span class="interest-icon">🤖</span>
+                                <i class="interest-icon fa-solid fa-robot" aria-hidden="true"></i>
                                 <div>
                                     <strong>AI Tools & Tech</strong>
                                     <p>
@@ -577,29 +580,36 @@
                 </div>
                 <div class="edu-grid">
                     <div class="edu-card reveal">
-                        <div class="edu-icon">🎓</div>
+                        <div class="edu-icon"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></div>
                         <div class="edu-body">
                             <span class="edu-badge">Diploma</span>
                             <h3>Computer Science Engineering</h3>
-                            <p class="edu-inst">GPU Unnao</p>
+                            <a
+                                class="edu-inst"
+                                href="https://www.gpunnao.com/"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                Government Polytechnic Unnao
+                            </a>
                             <div class="edu-achievement">
-                                <span class="achievement-badge"
-                                    >⭐ Star Techy of College</span
-                                >
+                                <span class="achievement-badge">
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    Star Techy of College
+                                </span>
                             </div>
                         </div>
                     </div>
                     <div class="certs-wrap reveal">
                         <h3 class="certs-title">Certificates</h3>
                         <div class="cert-card">
-                            <div class="cert-icon">📜</div>
+                            <div class="cert-icon"><i class="fa-solid fa-certificate" aria-hidden="true"></i></div>
                             <div>
                                 <strong>Web Development</strong>
                                 <p>BTPS Kanpur</p>
                             </div>
                         </div>
                         <div class="cert-card">
-                            <div class="cert-icon">📜</div>
+                            <div class="cert-icon"><i class="fa-solid fa-certificate" aria-hidden="true"></i></div>
                             <div>
                                 <strong>MERN Stack Development</strong>
                                 <p>Apna College</p>
@@ -627,7 +637,7 @@
                             <a
                                 href="mailto:abhishek638983k@gmail.com"
                                 class="contact-link">
-                                <span class="contact-link-icon">✉</span>
+                                <span class="contact-link-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></span>
                                 <div>
                                     <span class="contact-link-label"
                                         >Email</span
@@ -657,7 +667,7 @@
                                 target="_blank"
                                 rel="noopener"
                                 class="contact-link">
-                                <span class="contact-link-icon">⌥</span>
+                                <span class="contact-link-icon"><i class="fa-brands fa-github" aria-hidden="true"></i></span>
                                 <div>
                                     <span class="contact-link-label"
                                         >GitHub</span
@@ -672,7 +682,7 @@
                                 target="_blank"
                                 rel="noopener"
                                 class="contact-link">
-                                <span class="contact-link-icon">⚡</span>
+                                <span class="contact-link-icon"><i class="fa-solid fa-code" aria-hidden="true"></i></span>
                                 <div>
                                     <span class="contact-link-label"
                                         >LeetCode</span
@@ -736,7 +746,8 @@
                                 href="mailto:abhishek638983k@gmail.com"
                                 class="btn btn-ghost"
                                 style="width: 100%">
-                                ✉ Email Via Any Email App
+                                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                                Email Via Any Email App
                             </a>
                         </form>
                     </div>
@@ -785,7 +796,12 @@
                 </div>
                 <div class="footer-bottom">
                     <p>© 2026 Abhishek Kumar. All rights reserved.</p>
-                    <p>Designed & built with ❤ and lots of ☕</p>
+                    <p>
+                        Designed &amp; built with
+                        <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                        and lots of
+                        <i class="fa-solid fa-mug-hot" aria-hidden="true"></i>
+                    </p>
                 </div>
             </div>
         </footer>

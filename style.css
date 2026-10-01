@@ -1,10 +1,10 @@
 :root {
     --bg: #211f19;
-    --bg-alt: #29271f;
-    --surface: #302d24;
-    --surface-2: #3a362b;
+    --bg-alt: #2b2923;
+    --surface: #343128;
+    --surface-2: #3d3a30;
     --border: rgba(190, 139, 86, 0.3);
-    --border-subtle: rgba(235, 221, 190, 0.1);
+    --border-subtle: rgba(235, 221, 190, 0.13);
     --text: #eee5d1;
     --text-muted: #b9ad94;
     --text-faint: #897e68;
@@ -30,24 +30,24 @@
 }
 
 [data-theme="light"] {
-    --bg: #f2ead8;
-    --bg-alt: #e9dfcc;
-    --surface: #faf5e9;
-    --surface-2: #eee4d1;
-    --border: rgba(151, 83, 56, 0.28);
-    --border-subtle: rgba(70, 57, 39, 0.13);
-    --text: #30291f;
-    --text-muted: #665944;
-    --text-faint: #91836b;
+    --bg: #f4f6f3;
+    --bg-alt: #e9eeea;
+    --surface: #fbfcfa;
+    --surface-2: #e2e9e4;
+    --border: rgba(92, 111, 99, 0.28);
+    --border-subtle: rgba(42, 57, 49, 0.12);
+    --text: #252e29;
+    --text-muted: #5d6b63;
+    --text-faint: #7f8d84;
     --accent: #9f5038;
     --accent-light: #a85a3d;
     --accent-hover: #813e2d;
-    --accent-glow: rgba(159, 80, 56, 0.16);
+    --accent-glow: rgba(159, 80, 56, 0.12);
     --accent-overlay: rgba(130, 63, 43, 0.9);
-    --cyan: #65724d;
-    --cyan-glow: rgba(101, 114, 77, 0.16);
-    --green: #68744d;
-    --green-glow: rgba(104, 116, 77, 0.16);
+    --cyan: #58705f;
+    --cyan-glow: rgba(88, 112, 95, 0.14);
+    --green: #507258;
+    --green-glow: rgba(80, 114, 88, 0.14);
     --gold: #88652e;
     --gold-soft: rgba(136, 101, 46, 0.12);
     --gold-border: rgba(136, 101, 46, 0.24);
@@ -142,7 +142,7 @@ ul {
 }
 
 [data-theme="light"] .nav.scrolled {
-    background: rgba(242, 234, 216, 0.92);
+    background: rgba(244, 246, 243, 0.92);
 }
 
 .nav-inner {
@@ -468,13 +468,13 @@ ul {
     font-family: var(--font-display);
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--text);
+    color: var(--accent-light);
     line-height: 1;
 }
 
 .stat-label {
     font-size: 0.75rem;
-    color: var(--text-faint);
+    color: var(--text-muted);
     text-transform: uppercase;
     letter-spacing: 0.08em;
 }
@@ -1023,6 +1023,18 @@ ul {
     color: var(--text-muted);
     font-size: 0.9rem;
     margin-bottom: 16px;
+    text-decoration-color: transparent;
+    text-underline-offset: 3px;
+    transition:
+        color var(--transition),
+        text-decoration-color var(--transition);
+}
+
+.edu-inst:hover,
+.edu-inst:focus-visible {
+    color: var(--accent-light);
+    text-decoration: underline;
+    text-decoration-color: currentColor;
 }
 
 .achievement-badge {
